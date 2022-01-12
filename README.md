@@ -1,4 +1,4 @@
-### Repositories (from scratch) about data structures, fuzzy logic, machine learning, methauristic optimization, and robotics.
+### Repositories (from scratch) about data structures, fuzzy logic, machine learning, metaheuristic optimization, and robotics.
 
 ## **Python**
 
