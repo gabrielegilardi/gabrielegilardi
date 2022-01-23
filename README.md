@@ -2,7 +2,7 @@
 
 ## **Python**
 
-**ANFIS.** Multivariate regression and classification using an adaptive neuro-fuzzy inference system (Takagi-Sugeno) and particle swarm optimization.
+**[ANFIS](https://github.com/gabrielegilardi/ANFIS)** Multivariate regression and classification using an adaptive neuro-fuzzy inference system (Takagi-Sugeno) and particle swarm optimization.
 
 **BayesianInference.** Implementation of Markov chain Monte Carlo sampling and the Metropolis-Hastings algorithm for multi-parameter Bayesian inference.
 
