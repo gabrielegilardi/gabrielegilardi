@@ -1,5 +1,13 @@
 ### Repositories (from scratch) about data structures, fuzzy logic, machine learning, metaheuristic optimization, and robotics.
 
+## **C++**
+
+**[ANFIS-metaheuristic](https://github.com/gabrielegilardi/ANFIS-metaheuristic)** - Multivariate regression and classification using an adaptive neuro-fuzzy inference system (Takagi-Sugeno) and metaheuristic optimization.
+
+**[BayesianInference](https://github.com/gabrielegilardi/BayesianInference)** - Implementation of Markov chain Monte Carlo sampling and the Metropolis-Hastings algorithm for multi-parameter Bayesian inference.
+
+**[SimulatedAnnealing](https://github.com/gabrielegilardi/SimulatedAnnealing)** - Implementation of metaheuristic optimization using population-based simulated annealing.
+
 ## **Python**
 
 **[ANFIS](https://github.com/gabrielegilardi/ANFIS)** - Multivariate regression and classification using an adaptive neuro-fuzzy inference system (Takagi-Sugeno) and particle swarm optimization.
@@ -37,14 +45,6 @@
 **[Sorting](https://github.com/gabrielegilardi/Sorting)** - Implementation of sorting and searching functions for lists and arrays.
 
 **[SpaceDyn](https://github.com/gabrielegilardi/SpaceDyn)** - A toolbox for space, mobile, and humanoid robotic systems (work in progress).
-
-## **C++**
-
-**[ANFIS-metaheuristic](https://github.com/gabrielegilardi/ANFIS-metaheuristic)** - Multivariate regression and classification using an adaptive neuro-fuzzy inference system (Takagi-Sugeno) and metaheuristic optimization.
-
-**[BayesianInference](https://github.com/gabrielegilardi/BayesianInference)** - Implementation of Markov chain Monte Carlo sampling and the Metropolis-Hastings algorithm for multi-parameter Bayesian inference.
-
-**[SimulatedAnnealing](https://github.com/gabrielegilardi/SimulatedAnnealing)** - Implementation of metaheuristic optimization using population-based simulated annealing.
 
 ## **Matlab**
 
