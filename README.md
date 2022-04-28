@@ -1,53 +1,24 @@
-### Repositories (from scratch) about data structures, fuzzy logic, machine learning, metaheuristic optimization, and robotics.
+# Study of attitude determination accuracy based on STT and Gyro spec
 
-## **C++**
+## orbit data analysis
+- main.py
+  - Main file for attitude estimation by using orbit data. Please execute this file.
+  - Log data are saved in the datetime named folder under the 'log/' directory.
+- attitude_estimation.py
+  - File for AttitudeEstimation class which includes filtering process.
+  - Setting parameters for Kalman Filter are written in initialize section, please revise them if the filtering performance is not good. In addition, "Adaptive Kalman Filter" is one of the solutions that release from the hard parameter tuning task.
+  - Reference
+    - https://ieeexplore.ieee.org/document/555664
+    - https://www.researchgate.net/publication/286650453_Spacecraft_attitude_rate_estimation_by_an_adaptive_unscented_Kalman_filter
+- gyro.py
+  - File for Gyro class. This class can treat the gyro orbit data and user can get the angular velocity data for specified time by 'get_omega_deg_s' function.
+- star_tracker.py
+  - File for StarTracker class. This class manages the specific information for each STT like alignment angle and measurement accuracy. User can get the measurement euler angle for specified time.
+- plot_data.py
+  - Script for ploting the log data. Please edit the log folder name when you execute this file.
+## plot steady state
+Script for plotting the attitude estimation accuracy in steady state with gyro and star tracker. Equations used in this script comes from following papers.
+- Analytic Steady-State Accuracy Solutions for Two Common Spacecraft Attitude Estimators
+- Analytic Steady-State Accuracy of a Spacecraft Attitude Estimator
 
-**[ANFIS-metaheuristic](https://github.com/gabrielegilardi/ANFIS-metaheuristic)** - Multivariate regression and classification using an adaptive neuro-fuzzy inference system (Takagi-Sugeno) and metaheuristic optimization.
-
-**[BayesianInference](https://github.com/gabrielegilardi/BayesianInference)** - Implementation of Markov chain Monte Carlo sampling and the Metropolis-Hastings algorithm for multi-parameter Bayesian inference.
-
-**[SimulatedAnnealing](https://github.com/gabrielegilardi/SimulatedAnnealing)** - Implementation of metaheuristic optimization using population-based simulated annealing.
-
-## **Python**
-
-**[ANFIS](https://github.com/gabrielegilardi/ANFIS)** - Multivariate regression and classification using an adaptive neuro-fuzzy inference system (Takagi-Sugeno) and particle swarm optimization.
-
-**[BayesianInference](https://github.com/gabrielegilardi/BayesianInference)** - Implementation of Markov chain Monte Carlo sampling and the Metropolis-Hastings algorithm for multi-parameter Bayesian inference.
-
-**[BinaryTree](https://github.com/gabrielegilardi/BinaryTree)** - Binary tree data structure using a binary node data structure.
-
-**[Clustering](https://github.com/gabrielegilardi/Clustering)** - Implementation of K-means and fuzzy C-means clustering methods using a naive algorithm and particle swarm optimization.
-
-**[DataStructures](https://github.com/gabrielegilardi/DataStructures)** - Basic data structures (stack, queue, priority queue, binary heap.)
-
-**[DecisionTree](https://github.com/gabrielegilardi/DecisionTree)** - Regression using decision tree, random tree, bootstrap aggregating (bagging), and boosting.
-
-**[FeedForwardNN](https://github.com/gabrielegilardi/FeedForwardNN)** - Multivariate regression and classification using a feed-forward neural network and gradient descent optimization.
-
-**[GridSearch](https://github.com/gabrielegilardi/GridSearch)** - Two-dimensional grid search using depth first search, breath first search, A* algorithm, and Dijkstra’s algorithm.
-
-**[HashTable](https://github.com/gabrielegilardi/HashTable)** - Hash table and dictionary class implementation using lists and double-linked lists.
-
-**[LinkedLists](https://github.com/gabrielegilardi/LinkedLists)** - Single and double linked list data structures.
-
-**[PathPlanning](https://github.com/gabrielegilardi/PathPlanning)** - Implementation of particle swarm optimization (PSO) for path planning when the environment is known.
-
-**[PSO](https://github.com/gabrielegilardi/PSO)** - Metaheuristic minimization using particle swarm optimization.
-
-**[Q-Learning](https://github.com/gabrielegilardi/Q-Learning)** - Reinforcement learning using Q-learning, double Q-learning, and Dyna-Q.
-
-**[RegressionGDO](https://github.com/gabrielegilardi/RegressionGDO)** - Multivariate linear and logistic regression using gradient descent optimization.
-
-**[SignalFilters](https://github.com/gabrielegilardi/SignalFilters)** - Signal filtering and generation of synthetic time-series.
-
-**[SimulatedAnnealing](https://github.com/gabrielegilardi/SimulatedAnnealing)** - Implementation of metaheuristic optimization using population-based simulated annealing.
-
-**[Sorting](https://github.com/gabrielegilardi/Sorting)** - Implementation of sorting and searching functions for lists and arrays.
-
-**[SpaceDyn](https://github.com/gabrielegilardi/SpaceDyn)** - A toolbox for space, mobile, and humanoid robotic systems (work in progress).
-
-## **Matlab**
-
-**[ClassificationNN](https://github.com/gabrielegilardi/ClassificationNN)** - Multivariate classification using a feed-forward neural network and backpropagation.
-
-**[FingerControl](https://github.com/gabrielegilardi/FingerControl)** - Biomimetic Control of an Artificial Finger for Rehabilitation Robotics Using Shape Memory Alloy Actuators.
+Those papers are placed in \\axelnas2\intern\nishimoto\Input\from_kurata\20211210_reference_paper
